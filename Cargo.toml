@@ -14,9 +14,9 @@ members = ["config", "util", "plugin"]
 
 [features]
 default = ["tui", "cpu"]
-opencl = ["ocl_cuckatoo", "progpow_miner_opencl", "progpow_opencl"]
-cuda = ["progpow_miner_cuda", "progpow_cuda", "cuckoo_miner_cuda"]
-cpu = ["cuckoo_miner"]
+#opencl = ["ocl_cuckatoo", "progpow_miner_opencl", "progpow_opencl"]
+#cuda = ["progpow_miner_cuda", "progpow_cuda", "cuckoo_miner_cuda"]
+cpu = []
 tui = ["cursive"]
 
 [[bin]]
@@ -41,7 +41,7 @@ epic_miner_util = { path = "./util", version = "1.0.2" }
 epic_miner_plugin = { path = "./plugin", version = "1.0.2" }
 epic_miner_config = { path = "./config", version = "1.0.2" }
 #use this alternative inclusion below to build cuda plugins
-ocl_cuckatoo = { path = "./ocl_cuckatoo", version = "1.0.2", optional = true}
+#ocl_cuckatoo = { path = "./ocl_cuckatoo", version = "1.0.2", optional = true}
 randomx = { path = "./randomx-rust", version = "0.1.0" }
 randomx_miner = { path = "./randomx-miner", version = "0.1.0" }
 
@@ -57,19 +57,19 @@ cursive = { version = "0.12", optional = true }
 name = "cucumber"
 harness = false
 
-[dependencies.cuckoo_miner_cuda]
-package = "cuckoo_miner"
-path = "./cuckoo-miner"
-version = "1.0.2"
-features = ["build-cuda-plugins"]
-optional = true
+#[dependencies.cuckoo_miner_cuda]
+#package = "cuckoo_miner"
+#path = "./cuckoo-miner"
+#version = "1.0.2"
+#features = ["build-cuda-plugins"]
+#optional = true
 
-[dependencies.cuckoo_miner]
-package = "cuckoo_miner"
-path = "./cuckoo-miner"
-version = "1.0.2"
-features = []
-optional = true
+#[dependencies.cuckoo_miner]
+#package = "cuckoo_miner"
+#path = "./cuckoo-miner"
+#version = "1.0.2"
+#features = []
+#optional = true
 
 [dependencies.progpow_miner_opencl]
 package = "progpow_miner"
