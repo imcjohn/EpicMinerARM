@@ -2,6 +2,10 @@
 
 A standalone mining implementation intended for mining epic against a running Epic node.
 
+## Build instructions
+
+I added a custom build.sh script that should allow you to build the heavily patched version of this on the RockPRO or any other 4GB Ram ARM Board. It only supports RandomX, which to be honest is the only algorithm that is likely to work with any sort of speed anyways. All the details below are for the standard EpicMiner repository, so they may be somewhat confusing. Clone the repo, run build.sh (ideally on some sort of debian/ubuntu distro), and get mining! If you have any patches, feel free to send a a pull request on over. 
+
 ## Supported Platforms
 
 At present, only mining plugins for linux-x86_64 and MacOS exist. This will likely change over time as the community creates more solvers for different platforms.
