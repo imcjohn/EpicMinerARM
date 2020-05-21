@@ -8,7 +8,7 @@ I added a custom build.sh script that should allow you to build the heavily patc
 
 ## Supported Platforms
 
-At present, only mining plugins for linux-x86_64 and MacOS exist. This will likely change over time as the community creates more solvers for different platforms.
+This particular fork is designed for ARM boards, really anything ARM64 with 4GB+ ram should work. If you are using x86, use the real miner from https://gitlab.com/epiccash/
 
 ## Requirements
 
